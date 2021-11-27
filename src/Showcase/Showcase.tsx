@@ -20,6 +20,8 @@ function Showcase() {
 
   return (
     <Canvas ref={ref}>
+      <Camera />
+
       <Provider store={gameStore}>
         <CameraDolly>
           <Camera />
