@@ -21,7 +21,14 @@
       }
     ],
     "react/self-closing-comp": "error",
-    "unused-imports/no-unused-imports-ts": "error"
+    "unused-imports/no-unused-imports-ts": "error",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["state"]
+      }
+    ]
   },
   "ignorePatterns": "*.config.js"
 }

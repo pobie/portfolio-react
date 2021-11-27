@@ -1,36 +1,36 @@
-import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import CyclingText from './CyclingText';
 
 function Home() {
   return (
-    <div className="h-screen flex flex-col justify-center">
-      <div>
-        <h1 className="font-extrabold">Pierre-Olivier Boulet</h1>
-        <h2 className="font-medium text-blue-500">
-          I&apos;m a front-end developer
-        </h2>
+    <motion.div
+      className="w-full"
+      initial={{ opacity: 0, y: '20px' }}
+      animate={{
+        opacity: 1,
+        y: '0',
+        transition: { delay: 0.5, duration: 0.5 },
+      }}
+      exit={{
+        opacity: 0,
+        y: '-20px',
+        transition: {
+          ease: 'easeInOut',
+        },
+      }}
+    >
+      <div className="h-screen w-full flex flex-col justify-center">
+        <div className="flex flex-col">
+          <h1 className="font-extrabold">Pierre-Olivier Boulet</h1>
+          <h2 className="text-blue-500">
+            <div className="flex">
+              <p className="mr-2">I do</p>
+              <CyclingText />
+            </div>
+          </h2>
+        </div>
       </div>
-
-      <nav className="menu flex mt-2 space-x-2">
-        <Link
-          to="/bio"
-          className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-        >
-          Who I am
-        </Link>
-        <Link
-          to="what"
-          className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-        >
-          What I do
-        </Link>
-        <Link
-          to="contact"
-          className="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-        >
-          Send me a message
-        </Link>
-      </nav>
-    </div>
+    </motion.div>
   );
 }
 

@@ -4,4 +4,6 @@ body,
 .App {
   /* stylelint-disable-next-line unit-allowed-list */
   height: 100vh;
+  /* stylelint-disable-next-line unit-allowed-list */
+  width: 100vw;
 }

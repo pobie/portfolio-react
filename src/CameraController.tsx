@@ -1,21 +1,21 @@
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { useEffect } from 'react';
-import { useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
+import { useSelector } from 'react-redux';
+import { StoreRootState } from './store/gameStore';
+import OrbitControls from './Game/Camera/OrbitControls';
 
 const CameraController = () => {
-  const { camera, gl } = useThree();
-  useEffect(() => {
-    const controls = new OrbitControls(camera, gl.domElement);
+  const { camera } = useThree();
+  const controls: OrbitControls = new OrbitControls(camera);
+  const { dolly } = useSelector((state: StoreRootState) => state.CameraTarget);
 
-    controls.maxPolarAngle = Math.PI / 2;
-    controls.minDistance = 3;
-    controls.enablePan = false;
-    controls.enableZoom = false;
-    controls.maxDistance = 20;
-    return () => {
-      controls.dispose();
-    };
-  }, [camera, gl]);
+  useFrame(() => {
+    if (!dolly) {
+      return;
+    }
+    controls.setTarget(dolly);
+    controls.update();
+  });
+
   return null;
 };
 
