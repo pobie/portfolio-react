@@ -4,7 +4,7 @@ import Showcase from './Showcase/Showcase';
 
 function App() {
   return (
-    <div className="h-full container mx-auto flex w-full justify-center">
+    <div className="h-full w-full ">
       <Suspense fallback={<h1>Loading profile...</h1>}>
         <Showcase />
       </Suspense>
