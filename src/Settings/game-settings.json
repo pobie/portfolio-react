@@ -1,5 +1,8 @@
 {
   "player": {
     "speed": 6
+  },
+  "camera": {
+    "zoom": 0.4
   }
 }

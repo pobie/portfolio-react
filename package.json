@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.4.2",
-    "@react-three/cannon": "^4.1.0",
-    "@react-three/drei": "^7.22.9",
-    "@react-three/fiber": "^7.0.21",
+    "@chakra-ui/react": "^1.7.2",
+    "@craco/craco": "^6.4.3",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@react-three/cannon": "^4.2.0",
+    "@react-three/drei": "^7.27.4",
+    "@react-three/fiber": "^7.0.23",
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.1.0",
@@ -18,7 +21,8 @@
     "@types/react-router-dom": "^5.3.2",
     "@types/three": "^0.131.1",
     "cannon-es": "^0.18.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^4",
+    "history": "^5.1.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -28,8 +32,7 @@
     "redux": "^4.1.2",
     "stylelint-config-recommended": "^6.0.0",
     "three": "^0.135.0",
-    "three.interaction": "^0.2.3",
-    "typescript": "^4.5.2",
+    "typescript": "^4.5.3",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -100,6 +103,6 @@
     ]
   },
   "optionalDependencies": {
-    "babel-loader": "8.2.3"
+    "babel-loader": "8.1.0"
   }
 }

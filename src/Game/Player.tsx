@@ -31,7 +31,7 @@ function Player({ position }: CubeProps) {
     controls.update();
   });
   return (
-    <mesh ref={ref}>
+    <mesh>
       <sphereBufferGeometry />
     </mesh>
   );
