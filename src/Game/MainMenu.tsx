@@ -15,7 +15,9 @@ type GLTFResult = GLTF & {
 };
 
 function MainMenu() {
-  const { nodes } = useGLTF('/portfolio_home.glb') as GLTFResult;
+  const { nodes } = useGLTF(
+    `${process.env.PUBLIC_URL}/portfolio_home.glb`
+  ) as GLTFResult;
   nodes.Base.geometry.computeBoundingBox();
   return (
     <mesh
