@@ -20,7 +20,7 @@
     "@types/react": "^17.0.21",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.2",
-    "@types/three": "^0.131.1",
+    "@types/three": "^0.136.0",
     "cannon-es": "^0.18.0",
     "framer-motion": "^4",
     "history": "^5.1.0",
