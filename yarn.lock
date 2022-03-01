@@ -15945,10 +15945,10 @@ three-stdlib@^2.6.1:
     potpack "^1.0.1"
     zstddec "^0.0.2"
 
-three@^0.135.0:
-  version "0.135.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.135.0.tgz#cff4ec8edd3c51ce9bc7e88d13e8eafed4d0ddfc"
-  integrity sha512-kuEpuuxRzLv0MDsXai9huCxOSQPZ4vje6y0gn80SRmQvgz6/+rI0NAvCRAw56zYaWKMGMfqKWsxF9Qa2Z9xymQ==
+three@^0.138.1:
+  version "0.138.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.138.1.tgz#1839757179fc4a0a933310d017394e1f3b6588f7"
+  integrity sha512-SDoBVP0zIc0f265Sc2qSOo0izme6EL+rQl+PuzzFSadLmbMpzUv6pGhyGGyKE0CGREYZXQRV2xybY1b6NY45lg==
 
 throat@^5.0.0:
   version "5.0.0"
